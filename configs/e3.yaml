@@ -1,0 +1,12 @@
+seed: 42
+n_windows: 4
+window_size: 2500
+fraud_prevalence: 0.05
+drift: gradual     # gradual|shock
+dropout:
+  new_device: 0.0
+  geo_velocity_flag: 0.2
+  ip_asn_reputation: 0.1
+  recent_pw_change: 0.0
+  recent_mfa_change: 0.0
+overlay_profile: classical

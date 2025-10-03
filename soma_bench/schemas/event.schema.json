@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "event",
+  "type": "object",
+  "properties": {
+    "event_id": {"type": "string"},
+    "ts": {"type": "string"},
+    "event_type": {"type": "string", "enum": ["signin", "recovery", "rotation"]},
+    "is_fraud": {"type": "boolean"},
+    "device_hash": {"type": "string"},
+    "new_device": {"type": "boolean"},
+    "ip_asn_reputation": {"type": "number", "minimum": 0, "maximum": 1},
+    "geo_velocity_flag": {"type": "boolean"},
+    "recent_pw_change": {"type": "boolean"},
+    "recent_mfa_change": {"type": "boolean"},
+    "service_id": {"type": "string"},
+    "S": {"type": "integer", "minimum": 1, "maximum": 3},
+    "C": {"type": "string"},
+    "decision_latency_ms": {"type": "number"},
+    "challenge_time_ms": {"type": "number"},
+    "final_outcome": {"type": "string", "enum": ["allow","challenge","deny"]}
+  },
+  "required": ["event_id","ts","event_type","is_fraud"]
+}

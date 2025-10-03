@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "receipt_min",
+  "type": "object",
+  "properties": {
+    "rid": {"type": "string"},
+    "bundle_hash": {"type": "string"},
+    "S": {"type": "integer"},
+    "C": {"type": "string"},
+    "outcome": {"type": "string"},
+    "sig_profile": {"type": "string"}
+  }
+}

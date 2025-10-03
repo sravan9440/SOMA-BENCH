@@ -1,0 +1,14 @@
+seed: 42
+n_events: 10000
+fraud_prevalence: 0.05
+drift: none
+dropout:
+  new_device: 0.0
+  geo_velocity_flag: 0.0
+  ip_asn_reputation: 0.0
+  recent_pw_change: 0.0
+  recent_mfa_change: 0.0
+overlay_profile: classical  # classical|hybrid|pqc
+tti_challenge_ms: [800, 2200]      # uniform range for successful challenge
+tti_manual_review_ms: [4000, 6500] # range used by Static MFA on recovery
+asn_bad_thresholds: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30]

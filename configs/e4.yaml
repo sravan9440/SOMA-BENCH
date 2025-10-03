@@ -1,0 +1,12 @@
+seed: 42
+overlay_profiles: [classical, hybrid, pqc]
+rollout:
+  stages:
+    - { name: canary, adoption_pct: 1 }
+    - { name: batch1, adoption_pct: 10 }
+    - { name: batch2, adoption_pct: 40 }
+    - { name: batch3, adoption_pct: 49 }
+  slo:
+    p95_latency_ms_max: 240
+    error_pct_max: 1.0
+baseline_policy: trivial_risk   # or static_mfa

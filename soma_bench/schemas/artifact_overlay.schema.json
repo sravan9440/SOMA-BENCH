@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "artifact_overlay",
+  "type": "object",
+  "properties": {
+    "flow": {"type": "string", "enum": ["issuance","verification"]},
+    "profile": {"type": "string", "enum": ["classical","hybrid","pqc"]},
+    "payload_bytes": {"type": "integer"},
+    "cpu_ms_p50": {"type": "number"},
+    "cpu_ms_p95": {"type": "number"}
+  },
+  "required": ["flow","profile","payload_bytes","cpu_ms_p50","cpu_ms_p95"]
+}
