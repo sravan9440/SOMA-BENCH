@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use SOMA-Bench, please cite the software and Paper 2."
+title: "SOMA-Bench: An Open Synthetic Benchmark for Risk-Aware Recovery & Machine Identities in PQC-era IAM"
+version: "0.1.0"
+date-released: "2025-10-02"
+authors:
+  - family-names: "Nidamanooru"
+    given-names: "Sravanakumar"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.16989599
+repository-code: "https://github.com/yourname/soma-bench"
+license: "Apache-2.0"
